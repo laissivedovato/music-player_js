@@ -27,19 +27,23 @@ renderizarMusica(indexMusica);
   musica.addEventListener('timeupdate', atualizarBarra);
 
   document.querySelector('.anterior').addEventListener('click', () => {
+    pausarMusica();
     indexMusica--;
     if (indexMusica < 0) {
       indexMusica = 2;
     }
     renderizarMusica(indexMusica);
+    atualizarBarra();
   });
 
   document.querySelector('.proxima').addEventListener('click', () => {
+    pausarMusica();
     indexMusica++;
     if (indexMusica > 2) {
       indexMusica = 0;
     }
     renderizarMusica(indexMusica);
+    atualizarBarra();
   });
 
 //tocar música

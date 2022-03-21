@@ -1,5 +1,6 @@
 
 
+
 body, html {
     margin: 0;
     padding: 0;
@@ -8,7 +9,7 @@ body, html {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    background-color: #333;
+    background-color: #ddd;
     color: #ddd;
     font-family: 'Montserrat', sans-serif;
 }
@@ -16,20 +17,23 @@ body, html {
 img {
     width: 300px;
     height: 300px;
-    border-radius: 5px;
+    border-radius: 5 px;
 }
 
 .descricao {
     width: 300px;
+    color: #333;
 }
 
 h2 {
     margin-bottom: 5px;
+    color: #333;
 }
 
 .duracao {
     width: 300px;
     margin-top: 25px;
+    color: #333;
 }
 
 .barra {
@@ -40,20 +44,24 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    color: #fff;
+
 }
 
-progress {
+.progress {
     height: 6px;
     width: 0%;
     background-color: #333;
+    color: #fff;
 }
 
 .ponto {
     width: 18px;
     height: 18px;
-    background-color: #eee;
+    background-color: #fff;
     border-radius: 50%;
     margin-left: -10px;
+
 }
 
 .tempo {
@@ -68,20 +76,32 @@ progress {
     justify-content: space-around;
     align-items: center;
     margin-top: 15px;
+
 }
 
 .botao-play, .botao-pause {
     font-size: 50px;
     cursor: pointer;
+    color: #fff;
+
 }
 
 .setas {
     font-size: 40px;
     cursor: pointer;
+    color: #fff;
 }
 
 .botao-pause {
     display: none;
 }
 
+.container {
+    padding: 45px;
+   background: #9796f0;
+    background: -webkit-linear-gradient(to right, #fbc7d4, #9796f0);
+    background: linear-gradient(to right, #fbc7d4, #9796f0);
+    box-shadow: 4px 5px 5px 2px rgba(0, 0, 0, 0.30);
+    border-radius: 4px;
+}
 
